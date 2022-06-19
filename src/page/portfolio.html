@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>julias_ph</title>
+    <!--Шлях до css це відносний шлях не залежить ввід папки-->
+    <link rel="stylesheet" href="@@webRoot/css/bundle.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <h1 class="header__logo"><a class="logo" href="../index.html">julias_ph</a></h1> 
+                <nav class="header__nav">
+                    <input class="gam-btn-input" id="m1" type="checkbox">
+                    <label class="gam-btn" for="m1">
+                        <div class="header__gam-btn">
+                            <div class="header__gam-line"></div>
+                            <div class="header__gam-line"></div>
+                            <div class="header__gam-line"></div>
+                        </div>
+                    </label>
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a href="../index.html" class="header__link">Home</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./portfolio.html" class="header__link header__link--active">Portfolio</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./booking.html" class="header__link">Booking</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="portfolio">
+            <div class="portfolio__container">
+                <a class="portfolio__link img" target="_blank" href="./post/street.html">
+                    <img class="portfolio__img" src="../img/portfolio/street.jpg" alt="street img">
+                    <p class="portfolio__sub-title sub-title">STREET</p>
+                </a>
+                <a class="portfolio__link img" target="_blank" href="./post/art.html">
+                    <img class="portfolio__img" src="../img/portfolio/art.jpg" alt="art img">
+                    <p class="portfolio__sub-title sub-title">ART</p>
+                </a>
+                <a class="portfolio__link img" target="_blank" href="./post/studio.html">
+                    <img class="portfolio__img" src="../img/portfolio/studio.jpg" alt="studio img">
+                    <p class="portfolio__sub-title sub-title">STUDIO</p>
+                </a>
+                <a class="portfolio__link img" target="_blank" href="./post/love.html">
+                    <img class="portfolio__img" src="../img/portfolio/lovestory.jpg" alt="love story img">
+                    <p class="portfolio__sub-title sub-title">LOVE STORY</p>
+                </a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container container">
+                <h4 class="footer__text h4">Follow me</h4>
+                <div class="footer__icons-block">
+                    <a target="_blank" href="https://www.instagram.com/julias_ph/"><img class="footer__icon img" src="../img/icons/instagram.svg" alt="oops"></a>
+                    <a target="_blank" href="https://t.me/yulyasobchenko"><img class="footer__icon img" src="../img/icons/telegram.svg" alt="oops"></a>
+                    <a target="_blank" href="https://www.tiktok.com/@julias_ph?is_from_webapp=1&sender_device=pc"><img class="footer__icon img" src="../img/icons/tiktok.svg" alt="oops"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!--Обовязково додавати потрібно для JS -->
+    <script> var exports = {}; </script>
+    <script src="@@webRoot/js/index.js"></script>
+</body>
+
+</html>

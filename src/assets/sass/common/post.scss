@@ -1,0 +1,41 @@
+.post {
+    background-color: $color-background;
+    padding: 70px 0;
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__name {
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 15px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+    &__img-box {
+        display: flex;
+        gap: 5px;
+        overflow: scroll;
+            padding: 0 20px;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+    }
+    &__img {
+        max-width: 20%;
+        @media (max-width: $tab) {
+            max-width: 40%;
+        }
+    }
+    &__link {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    &__link:hover {
+        color: $color-hover;
+    }
+}

@@ -1,0 +1,192 @@
+.home {
+    background-color: $color-background;
+    //hero
+    .hero{
+        &__container {
+            padding: 40px 0;
+        }
+        &__block {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            @media (max-width: $tab) {
+                flex-direction: column;
+                gap: 25px;
+                align-items: center;
+            }
+        }
+        &__sub-title {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        &__text {
+            max-width: 350px;
+            @media (max-width: $tab) {
+                order: 2;
+                text-align: center;
+            }
+        }
+        &__img {
+            max-width: 400px;
+            @media (max-width: $tab) {
+                order: 1;
+            }
+        }
+    }
+    .inst {
+        &__container {
+            padding: 40px;
+        }
+        &__text {
+            margin-bottom: 70px;
+            text-align: center;
+            @media (max-width: $tab) {
+                margin-bottom: 30px;
+            }
+        }
+        &__post {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-bottom: 70px;
+            @media (max-width: $tab) {
+                gap: 2px;
+            }
+        }
+        &__img {
+            max-width: 475px;
+            max-height: 475px;
+            @media (max-width: $tab) {
+                max-width: 27%;
+                max-height: 27%;
+            }
+        }
+        a{
+            display: block;
+        }
+    }
+    //hero end
+
+    //slider
+    .slider{
+        &__container {
+            display: flex;
+            gap: 32px;
+            overflow: scroll;
+            padding: 0 20px;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            margin-bottom: 128px;
+            @media (max-width: $tab) {
+                margin-bottom: 64px;
+            }
+        } 
+        &__item {
+            min-width: 544px;
+            @media (max-width: $tab) {
+                min-width: 257px;
+            }
+        }
+        &__img {
+            margin-bottom: 16px;
+        }
+    }
+    //slider end
+
+    //paragraph
+    .paragraph {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 128px;
+            @media (max-width: $tab) {
+                flex-direction: column;
+                gap: 48px;
+                margin-bottom: 48px;
+            }
+        }
+        &__sub-title_1 {
+            @media (max-width: $tab) {
+                margin-bottom: 35px;
+            }
+        }
+        &__sub-title_2 {
+            margin-bottom: 48px;
+            max-width: 430px;
+            @media (max-width: $tab) {
+                margin-bottom: 28px;
+            }
+        }
+        &__sub-title-box {
+            @media (max-width: $tab) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        &__text-box {
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 42px;
+        }
+    }
+    //paragraph end
+
+    //card
+    .card {
+        &__container {
+            padding-bottom: 152px;
+        }
+        &__block {
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: $tab) {
+                flex-direction: column;
+                gap: 48px;
+            }
+        }
+        &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            @media (max-width: $tab) {
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 48px;
+                align-items: flex-start;
+            }
+        }
+        &__head-right {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        &__box {
+            max-width: 350px;
+            max-height: 475px;
+        }
+        &__img {
+            margin-bottom: 24px;
+            @media (max-width: $tab) {
+                margin-bottom: 16px;
+            }
+        }
+        &__small-text-block {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            @media (max-width: $tab) {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+        &__sub-title {
+            margin-bottom: 24px;
+        }
+    }
+    //card end
+}

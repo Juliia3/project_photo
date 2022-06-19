@@ -1,0 +1,27 @@
+.portfolio {
+    // background-color: $color-background;
+    &__container {
+        // position: relative;
+        // background-color: $color-background;
+        // height: 700px;
+        z-index: -2;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        max-width: 500px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    &__img {
+        position: absolute;
+        max-width: 500px;
+        // max-height: 700px;
+        z-index: -1;
+    }
+    &__sub-title {
+        z-index: 10;
+        padding: 50% 0;
+    }
+}
