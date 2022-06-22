@@ -36,6 +36,8 @@
     .inst {
         &__container {
             padding: 40px;
+            width: 100%;
+            max-width: 1600px;
         }
         &__text {
             margin-bottom: 70px;
@@ -46,7 +48,7 @@
         }
         &__post {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             gap: 5px;
             flex-wrap: wrap;
             margin-bottom: 70px;
@@ -55,8 +57,7 @@
             }
         }
         &__img {
-            max-width: 475px;
-            max-height: 475px;
+            max-width: 33%;
             @media (max-width: $tab) {
                 max-width: 27%;
                 max-height: 27%;

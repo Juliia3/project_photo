@@ -34,6 +34,10 @@
         display: block;
         max-width: 200px;
         margin: 0 auto;
+        @media (max-width: $tab) {
+            font-size: 20px;
+            text-align: center;
+        }
     }
     &__link:hover {
         color: $color-hover;

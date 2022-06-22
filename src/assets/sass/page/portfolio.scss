@@ -1,27 +1,38 @@
 .portfolio {
-    // background-color: $color-background;
     &__container {
-        // position: relative;
-        // background-color: $color-background;
-        // height: 700px;
-        z-index: -2;
         display: flex;
-        justify-content: space-between;
+        overflow: scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        @media (max-width: $tab) {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 20px;
+        }
     }
     &__link {
+        width: 100%;
         max-width: 500px;
         position: relative;
         display: flex;
         justify-content: center;
+        align-items: center;
+        @media (max-width: $tab) {
+            max-width: 33%;
+            margin-bottom: 10px;
+        }
+
     }
     &__img {
         position: absolute;
         max-width: 500px;
-        // max-height: 700px;
-        z-index: -1;
+
     }
     &__sub-title {
         z-index: 10;
-        padding: 50% 0;
+        padding: 50% 50%;
+        text-align: center;
     }
 }
